@@ -20,8 +20,12 @@ def show_list():
 	clear_screen()
     # print out the list
     print("Here is your list:")
+
+    index = 1
     for item in shopping_list:
-        print(item)
+        print("{}. {}".format(index, item))
+        index += 1
+    print("-"*10)
 
 def add_to_list(new_item):
     # add new items to list
